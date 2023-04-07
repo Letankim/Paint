@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Paint tools</title>
+</head>
+<body>
+    <div class="nav_tools">
+        <ul class="list_tools">
+            <li class="tools_item">
+                <input type="color" name="color" id="color">
+            </li>
+            <li class="tools_item">
+                <input type="text" name="Text" id="text" placeholder="Insert text">
+            </li>
+            <li class="tools_item img">
+                <input type="file" name="color" id="img">
+                <img src="" alt="" class = "img_hide">
+            </li>
+            <li class="tools_item">
+                <button class="btn" id = "eraser">
+                    <i class='bx bxs-eraser' ></i>
+                </button>
+            </li>
+            <li class="tools_item">
+                <button class="btn" id = "down_size">-</button>
+            </li>
+            <li class="tools_item">
+                <button class="btn" id = "size">20</button>
+            </li>
+            <li class="tools_item">
+                <button class="btn" id = "up_size">+</button>
+            </li>
+            <li class="tools_item box_right">
+                <button class="btn" id = "save">
+                    <i class='bx bx-save' ></i>
+                </button>
+            </li>
+            <li class="tools_item">
+                <button class="btn" id = "reset">
+                    <i class='bx bx-reset' ></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="container_app">
+        <canvas id = "content" width="1500" height="650"></canvas>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
